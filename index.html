@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+    rel="stylesheet" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <main>
+    <section class="landing">
+      <nav>
+        <h1 id="logo">Portfolio</h1>
+        <ul class="nav-links">
+          <a class="links" href="#my-work">My work</a>
+          <li>
+            <a class="links" href="#about-me">About me</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="Name">Alexander Mensakov</h2>
+    </section>
+    <section id="my-work" class="my-work">
+      <div class="work-box">
+        <h1>MY Work</h1>
+        <div class="pic-box">
+          <img class="work-pic" src="tribute page.png" alt="">
+          <img class="work-pic" src="chatapp.png" alt="">
+          <img class="work-pic" src="documentation.png" alt="">
+          <img class="work-pic" src="glass.png" alt="">
+          <img class="work-pic" src="google.png" alt="">
+          <img class="work-pic" src="survey.png" alt="">
+          <img class="work-pic" src="hm.png" alt="">
+          <img class="work-pic" src="landingpage.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="about-me">
+      <div id="one" class="circle"></div>
+      <div id="two" class="circle"></div>
+
+      <svg>
+        <filter id="wavy">
+          <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="2">
+            <animate attributeName="baseFrequency" dur="60s" values="0.02;0.005;0.002" repeatCount="indefinite">
+
+
+          </feTurbulence>
+          <feDisplacementMap in="SourceGraphic" scale="30">
+        </filter>
+      </svg>
+
+      <div class="about-mebox">
+        <h1>About me</h1>
+        <div class="textbox">
+          <p>My name is Alexander Mensakov i go to a school in Jakobstad named optima to become a
+            programmer.</p>
+
+          <p>Im 16 years old i live in oravais. Im better at front-end developing than back-end developing.</p>
+          <p>I have been studying for half a year now and i have learned alot</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">I Am a front end developer</span>
+      </h1>
+
+      <h1 class="hide">
+        <span class="text"> I make responsive websites</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
